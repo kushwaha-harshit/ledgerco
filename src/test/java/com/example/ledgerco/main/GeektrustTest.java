@@ -32,12 +32,12 @@ class GeektrustTest {
 
     @Test
     void shouldRunApplicationAndReadCommandsAndExecuteTestInput1() {
-        integrationTest("src/test/resources/testInput1.txt", testOutput1);
+        integrationTest(Paths.get("src", "test", "resources", "testInput1.txt").toString(), testOutput1);
     }
 
     @Test
     void shouldRunApplicationAndReadCommandsAndExecuteTestInput2() {
-        integrationTest("src/test/resources/testInput2.txt", testOutput2);
+        integrationTest(Paths.get("src", "test", "resources", "testInput2.txt").toString(), testOutput2);
     }
 
     private void integrationTest(String inputFilePath, String expectedOutput) {
